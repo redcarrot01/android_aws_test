@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.media.ExifInterface;
-import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -118,7 +117,7 @@ public class SubActivity extends AppCompatActivity {
             Date curDate = new Date(System.currentTimeMillis());
             String filename = formatter.format(curDate);
 
-            String strFolderName = Environment.getExternalStoragePublicDirectory(DIRECTORY_PICTURES) + File.separator + "HONGDROID" + File.separator;
+            String strFolderName = Environment.getExternalStoragePublicDirectory(DIRECTORY_PICTURES) + File.separator + "face_register" + File.separator;
             File file = new File(strFolderName);
             if (!file.exists())
                 file.mkdirs();
